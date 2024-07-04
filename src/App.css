@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  background-color: #152850;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 1110px;
+}
+
+.ed-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  height: 40vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ed-name {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.ed-prof {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 19px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.songs-search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.songs-playlist-head {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  padding: 5px;
+  width: 85px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-container {
+    width: 200px;
+    height: 35px;
+  }
+}
+
+.input {
+  border: 0px solid transparent;
+  background-color: transparent;
+  width: 80%;
+  outline: none;
+}
+
+.delete {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+.music-playlist {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.no-songs-found-heading {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.no-songs-found-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
